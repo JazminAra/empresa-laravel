@@ -65,6 +65,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
+## PROJECT DESCRIPTION
+
+- The routes are login, contact, us and people.
+- It is executed with php artisan serve First, the project is created with the command composer create-project laravel/laravel PROJECTNAME but having XAMPP and download and install https://getcomposer.org/Composer-Setup.exe Then we open the project in the terminal cd PROJECTNAME The main layout of the views with Bootstrap, has page navigation with header and footer. Controllers were used with the command php artisan make:controller CONTROLLERNAME --reosource with the most used methods index(), create(), store(), show(), edit(), update() and destroy().
+- We connect the DB in the .env file:
+   DB_DATABASE=laravel
+   DB_USERNAME=root
+   DB_PASSWORD=
+- The DB is created in phyMyAdmin. Migrations were used with the php artisan migrate command and update migrations php artisan migrate:fresh
+- Models were used php artisan make:model MODELNAME -m
+- Records were inserted into the DB with new routes using route resource and FormRequestValidation with validations in the fields, messages were displayed with the php artisan make:request CreateROUTE_NAMERequest command and rules were added
+- Deleting and updating records with Eloquent was implemented, a contact form with validations and translating the validations, the sending to an email was processed with the php artisan make:mail command to display it in Mailtrap.
+- Flash Messages were implemented to other processes.
+- User Login and Registration was implemented for the system
+- Middlewares were added to verify the logged in user and in the routes
+- Images were added in person details and in the DB table, they were shown as Boostrap cards and the images were validated
+- Update and Delete Images was implemented, the images were optimized, in Events and Listeners with the php artisan event: generate command.
+- Queues or Work Queues were added in Laravel with the php artisan queue: table command and the php artisan queue: work is turned on
+- Delete and Update Categories were implemented in people, also in the relational DB table and the Categories were selected in the Form and People were filtered by Categories.
+
 ## DESCRIPCIÓN DEL PROYECTO
 
 - Las rutas son login, contacto, nosotros y personas.
