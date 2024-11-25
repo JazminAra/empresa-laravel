@@ -70,7 +70,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 - Las rutas son login, contacto, nosotros y personas.
 - Se ejecuta con php artisan serve
 Primero se crea el proyecto con el comando composer create-project laravel/laravel NOMBREPROYECTO pero teniendo el XAMPP y descargar e instalar el https://getcomposer.org/Composer-Setup.exe
-Luego abrimos el proyecto en el terminal cd codigo-laravel
+Luego abrimos el proyecto en el terminal cd NOMBREPROYECTO
 El layout principal de las vistas con Bootstrap, tiene navegación de pagina con header y footer. Se utilizo controladores con el comando php artisan make:controller NOMBRECONTROLADOR --reosource con métodos mas usados index(), create(), store(), show(), edit(), update() y destroy(). 
 - Conectamos la BD en el archivo .env :
   DB_DATABASE=laravel
@@ -83,8 +83,8 @@ El layout principal de las vistas con Bootstrap, tiene navegación de pagina con
 - Se implemento Mensajes Flash a otros procesos.
 - Se implemento el Login y Registro de Usuarios para el sistema
 - Se añadió el Middlewares para verificar el usuario logueado y en las rutas
-- Se agrego imágenes en detalles de servicios y en la tabla de la BD, se mostro como tarjetas o cards de Boostrap y se valido las imágenes
+- Se agrego imágenes en detalles de personas y en la tabla de la BD, se mostro como tarjetas o cards de Boostrap y se valido las imágenes
 - Se implemento Actualizar y Eliminar Imágenes,se optimizo las imágenes, en Eventos y Listeners con el comando php artisan event:generate.
 - Se añadio Queues o Colas de Trabajo en laravel con el comando php artisan queue:table y se enciende el php artisan queue:work
-- Se implemento Eliminar y Actualizar Categorías en servicios, también en la tabla BD relacional y se selecciona las Categorías en el Form y se filtro Servicios por Categorías.
+- Se implemento Eliminar y Actualizar Categorías en personas, también en la tabla BD relacional y se selecciona las Categorías en el Form y se filtro Personas por Categorías.
 
