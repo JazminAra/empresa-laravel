@@ -64,3 +64,27 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## DESCRIPCIÓN DEL PROYECTO
+
+- Las rutas son login, contacto, nosotros y personas.
+- Se ejecuta con php artisan serve
+Primero se crea el proyecto con el comando composer create-project laravel/laravel NOMBREPROYECTO pero teniendo el XAMPP y descargar e instalar el https://getcomposer.org/Composer-Setup.exe
+Luego abrimos el proyecto en el terminal cd codigo-laravel
+El layout principal de las vistas con Bootstrap, tiene navegación de pagina con header y footer. Se utilizo controladores con el comando php artisan make:controller NOMBRECONTROLADOR --reosource con métodos mas usados index(), create(), store(), show(), edit(), update() y destroy(). 
+- Conectamos la BD en el archivo .env :
+  DB_DATABASE=laravel
+  DB_USERNAME=root
+  DB_PASSWORD=
+- Se crea la bd en el phyMyAdmin. Se utilizo migraciones con el comando php artisan migrate y actualizar migraciones php artisan migrate:fresh
+- Se utilizo modelos php artisan make:model NOMBREMODELO -m
+- Se inserto resigtros a la BD con nuevas rutas utilizando route resource y FormRequestValidation con validaciones en los campos se muestra mensajes con el comando php artisan make:request CreateNOMBRERUTARequest y se agrego reglas
+- Se implemento eliminar y actualizar registros con Eloquent, un formulario de contacto con validaciones y traducir las validaciones, se proceso el envió a un email con el comando php artisan make:mail para visualizarlo en Mailtrap.
+- Se implemento Mensajes Flash a otros procesos.
+- Se implemento el Login y Registro de Usuarios para el sistema
+- Se añadió el Middlewares para verificar el usuario logueado y en las rutas
+- Se agrego imágenes en detalles de servicios y en la tabla de la BD, se mostro como tarjetas o cards de Boostrap y se valido las imágenes
+- Se implemento Actualizar y Eliminar Imágenes,se optimizo las imágenes, en Eventos y Listeners con el comando php artisan event:generate.
+- Se añadio Queues o Colas de Trabajo en laravel con el comando php artisan queue:table y se enciende el php artisan queue:work
+- Se implemento Eliminar y Actualizar Categorías en servicios, también en la tabla BD relacional y se selecciona las Categorías en el Form y se filtro Servicios por Categorías.
+
